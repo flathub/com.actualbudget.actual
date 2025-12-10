@@ -54,14 +54,14 @@ modules:
     sources:
       - type: file
         dest-filename: Actual.AppImage
-        url: https://github.com/actualbudget/actual/releases/download/v25.12.0/Actual-linux-x86_64.AppImage
-        sha256: a13ab7b10972a29628de1c14ece9844d4a258a810337f973dc53836015110068
+        url: https://github.com/actualbudget/actual/releases/download/v101.1.2/Actual-linux-x86_64.AppImage
+        sha256: 08734fdcf995c65368deac0f423de1a28e18da68a96a92dbb38cabecd41f4b12
         only-arches:
           - x86_64
 
       - type: file
         dest-filename: Actual.AppImage
-        url: https://github.com/actualbudget/actual/releases/download/v25.12.0/Actual-linux-arm64.AppImage
-        sha256: c15e5be1d8291f2d7351e86e3fb41c03838395cad873173ae15a45371542db7d
+        url: https://github.com/actualbudget/actual/releases/download/v101.1.2/Actual-linux-arm64.AppImage
+        sha256: 589853a0c1ff487045313463e18252790ca37df9899fc901eb51a936691f66e1
         only-arches:
           - aarch64
