@@ -49,19 +49,19 @@ modules:
       - cp -R squashfs-root/. /app/main
       - desktop-file-edit --set-icon ${FLATPAK_ID} --set-key Exec --set-value 'actual %u' /app/main/actual.desktop
       - install -Dm644 /app/main/actual.desktop /app/share/applications/${FLATPAK_ID}.desktop
-      - install -Dm644 /app/main/usr/share/icons/hicolor/256x256/apps/actual.png /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
+      - install -Dm644 /app/main/usr/share/icons/hicolor/512x512/apps/actual.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
       - install -Dm644 /app/main/resources/extra-resources/linux/${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
     sources:
       - type: file
         dest-filename: Actual.AppImage
         url: https://github.com/actualbudget/actual/releases/download/v25.12.0/Actual-linux-x86_64.AppImage
-        sha256: a13ab7b10972a29628de1c14ece9844d4a258a810337f973dc53836015110068
+        sha256: bd3adcf470379758d2045cef8f415d57e9bca257cfa3cb08d3f81cbc072ce80b
         only-arches:
           - x86_64
 
       - type: file
         dest-filename: Actual.AppImage
         url: https://github.com/actualbudget/actual/releases/download/v25.12.0/Actual-linux-arm64.AppImage
-        sha256: c15e5be1d8291f2d7351e86e3fb41c03838395cad873173ae15a45371542db7d
+        sha256: 752e59564f904e4d954a89cd5faffe7a79a25c25c332e459779cf5d5d8f067cc
         only-arches:
           - aarch64
