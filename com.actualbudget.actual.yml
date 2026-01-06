@@ -16,6 +16,9 @@ finish-args:
   # D-Bus
   - --share=ipc
 
+  # DRI for GPU access
+  - --device=dri
+
   # Network access
   - --share=network
 
