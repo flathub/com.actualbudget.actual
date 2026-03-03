@@ -8,3 +8,6 @@ This repo hosts the flatpak wrapper for [Actual](https://actualbudget.org), avai
 flatpak install flathub com.actualbudget.actual
 flatpak run com.actualbudget.actual
 ```
+
+
+test
